@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures - Nature of Dread Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0d1f0d',
+                            800: '#1a3a1a',
+                            700: '#2d5a2d',
+                        },
+                        blood: {
+                            900: '#4a0000',
+                            800: '#8b0000',
+                            700: '#b30000',
+                        },
+                        fog: '#e8f0e8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d1f0d 50%, #0a0a0a 100%);
+        }
+        .fog-overlay {
+            background: radial-gradient(ellipse at bottom, rgba(232,240,232,0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-200 font-sans">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <div class="fog-overlay fixed inset-0 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-forest-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold text-blood-800 hover:text-blood-700 transition-colors">
+                    Nature of Dread
+                </a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-fog hover:text-blood-800 transition-colors">Home</a>
+                    <a href="creatures.html" class="text-fog hover:text-blood-800 transition-colors border-b-2 border-blood-800">Creatures</a>
+                    <a href="story.html" class="text-fog hover:text-blood-800 transition-colors">Story</a>
+                    <a href="tips.html" class="text-fog hover:text-blood-800 transition-colors">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blood-800">Creature Bestiary</h1>
+            <p class="text-xl text-fog/70">A guide to the horrors that lurk in the forest</p>
+        </div>
+    </header>
+
+    <!-- Creatures List -->
+    <section class="py-8 px-4">
+        <div class="max-w-6xl mx-auto space-y-12">
+
+            <!-- The Watcher -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 overflow-hidden">
+                <div class="bg-black/30 px-6 py-4 border-b border-forest-800">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-fog">The Watcher</h2>
+                        <span class="px-3 py-1 bg-blood-800/50 text-blood-700 text-sm rounded-full">Hostile</span>
+                    </div>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Description</h3>
+                        <p class="text-gray-300 mb-4">A towering humanoid creature with no visible eyes. It locates prey through sound and vibrations. Emits a distinctive clicking sound when hunting.</p>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Habitat</h3>
+                        <p class="text-gray-300">Found throughout the forest, especially near old growth areas. Most active during new moons.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Behavior</h3>
+                        <ul class="text-gray-300 space-y-2 mb-4">
+                            <li>• Stands perfectly still when observing</li>
+                            <li>• Moves silently at high speed when attacking</li>
+                            <li>• Can detect heartbeats within 30 meters</li>
+                            <li>• Will investigate any sound source</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Weakness</h3>
+                        <p class="text-gray-300">Deaf to very low frequencies. Moving extremely slowly (sneaking) can allow safe passage. Red mushrooms attract it.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- The Hollow -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 overflow-hidden">
+                <div class="bg-black/30 px-6 py-4 border-b border-forest-800">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-fog">The Hollow</h2>
+                        <span class="px-3 py-1 bg-yellow-600/50 text-yellow-400 text-sm rounded-full">Neutral</span>
+                    </div>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Description</h3>
+                        <p class="text-gray-300 mb-4">Appears as a translucent humanoid figure made of bark and fog. Former forest spirits corrupted by an unknown force. They mourn continuously.</p>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Habitat</h3>
+                        <p class="text-gray-300">Ancient trees, dried creek beds, and places where many creatures have died. They mark significant story locations.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Behavior</h3>
+                        <ul class="text-gray-300 space-y-2 mb-4">
+                            <li>• Does not attack unless provoked</li>
+                            <li>• Will guide players to safety if spared</li>
+                            <li>• Disappears when The Watcher approaches</li>
+                            <li>• Drops rare bone charms when defeated</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Weakness</h3>
+                        <p class="text-gray-300">Fire and light repel them. They are vulnerable to iron weapons. Their mournful song can be mimicked to gain trust.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- The Crawlers -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 overflow-hidden">
+                <div class="bg-black/30 px-6 py-4 border-b border-forest-800">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-fog">The Crawlers</h2>
+                        <span class="px-3 py-1 bg-blood-800/50 text-blood-700 text-sm rounded-full">Hostile</span>
+                    </div>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Description</h3>
+                        <p class="text-gray-300 mb-4">Swarm predators that move in groups of 5-12. Resemble skinned wolves with too many limbs. They hunt through persistence, never giving up pursuit.</p>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Habitat</h3>
+                        <p class="text-gray-300">Underground tunnels, caves, and dense underbrush. They nest in hollow logs and abandoned animal dens.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Behavior</h3>
+                        <ul class="text-gray-300 space-y-2 mb-4">
+                            <li>• Communicate through high-pitched squeals</li>
+                            <li>• Will circle around to cut off escape routes</li>
+                            <li>• Tire quickly but recover fast</li>
+                            <li>• Become aggressive when leader is killed</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Weakness</h3>
+                        <p class="text-gray-300">Separated from the pack they become disoriented. Fire is highly effective. The alpha can be identified by its red markings.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- The Breathing Tree -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 overflow-hidden">
+                <div class="bg-black/30 px-6 py-4 border-b border-forest-800">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-fog">The Breathing Tree</h2>
+                        <span class="px-3 py-1 bg-purple-900/50 text-purple-400 text-sm rounded-full">Hazard</span>
+                    </div>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Description</h3>
+                        <p class="text-gray-300 mb-4">Trees infected with a parasitic organism that causes them to slowly move and snatch nearby creatures. They exhale sleeping gas periodically.</p>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Habitat</h3>
+                        <p class="text-gray-300">Found at forest edges and in clearings. Often near story landmarks. They mark safe zones from other predators.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Behavior</h3>
+                        <ul class="text-gray-300 space-y-2 mb-4">
+                            <li>• Remain dormant during day, active at night</li>
+                            <li>• Release gas clouds every 3-4 minutes</li>
+                            <li>• Roots can detect movement underground</li>
+                            <li>• Cannot move once rooted</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Weakness</h3>
+                        <p class="text-gray-300">Salt and fire damage them. Their gas is lighter than air - staying above it helps. Cutting roots weakens them.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Shadow Stalker -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 overflow-hidden">
+                <div class="bg-black/30 px-6 py-4 border-b border-forest-800">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-fog">Shadow Stalker</h2>
+                        <span class="px-3 py-1 bg-blood-800/50 text-blood-700 text-sm rounded-full">Hostile</span>
+                    </div>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Description</h3>
+                        <p class="text-gray-300 mb-4">A creature that exists between shadows, only visible when it moves. Its true form is unknown. Causes severe sanity loss when witnessed.</p>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Habitat</h3>
+                        <p class="text-gray-300">Deep forest interior, especially where direct moonlight cannot reach. Appears only during specific lunar phases.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Behavior</h3>
+                        <ul class="text-gray-300 space-y-2 mb-4">
+                            <li>• Can only be seen when moving between shadows</li>
+                            <li>• Copies player movement patterns</li>
+                            <li>• Appears in reflective surfaces first</li>
+                            <li>• Grows stronger in complete darkness</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Weakness</h3>
+                        <p class="text-gray-300">Constant light sources disrupt its form. It cannot exist in direct sunlight. White bone charms provide mental protection.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 mt-16 border-t border-forest-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                Fan-made wiki for Nature of Dread. Not affiliated with the developers.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                All game content and trademarks belong to their respective owners.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

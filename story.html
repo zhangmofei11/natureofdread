@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story & Lore - Nature of Dread Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0d1f0d',
+                            800: '#1a3a1a',
+                            700: '#2d5a2d',
+                        },
+                        blood: {
+                            900: '#4a0000',
+                            800: '#8b0000',
+                            700: '#b30000',
+                        },
+                        fog: '#e8f0e8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d1f0d 50%, #0a0a0a 100%);
+        }
+        .fog-overlay {
+            background: radial-gradient(ellipse at bottom, rgba(232,240,232,0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-200 font-sans">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <div class="fog-overlay fixed inset-0 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-forest-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold text-blood-800 hover:text-blood-700 transition-colors">
+                    Nature of Dread
+                </a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-fog hover:text-blood-800 transition-colors">Home</a>
+                    <a href="creatures.html" class="text-fog hover:text-blood-800 transition-colors">Creatures</a>
+                    <a href="story.html" class="text-fog hover:text-blood-800 transition-colors border-b-2 border-blood-800">Story</a>
+                    <a href="tips.html" class="text-fog hover:text-blood-800 transition-colors">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blood-800">Story & Lore</h1>
+            <p class="text-xl text-fog/70">Uncover the dark history of the Dreadwood Forest</p>
+        </div>
+    </header>
+
+    <!-- Story Content -->
+    <section class="py-8 px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+            <!-- Prologue -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Prologue: The Lost Expedition</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>You awaken in a moonlit clearing, head pounding, memories fragmented. The last thing you remember is joining the Harrington Expedition—a team of researchers sent to investigate the legends of Dreadwood Forest.</p>
+                    <p>Now you are alone. Your camp is gone. Your companions are gone. The forest stretches endlessly in every direction, and something out there is watching.</p>
+                    <p>Through the fog and twisted trees, you glimpse shapes that should not exist. Old research notes flutter in the wind, speaking of "the Breathing Dark" and "the First Hunger."</p>
+                    <p class="text-blood-800 font-semibold">Your only way out is through the heart of the forest—to find what remains of your team, and uncover the truth behind the forest's hunger.</p>
+                </div>
+            </article>
+
+            <!-- The Three Acts -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-6 border-b border-forest-800 pb-2">Story Walkthrough</h2>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blood-800 mb-3">Act I: Awakening</h3>
+                        <ul class="text-gray-300 space-y-2 ml-4">
+                            <li>1. Search the initial clearing for supplies and the first journal entry</li>
+                            <li>2. Follow the broken branches east to find the abandoned camp</li>
+                            <li>3. Retrieve the expedition map from the supply tent</li>
+                            <li>4. Encounter your first Hollow—choose whether to spare or fight</li>
+                            <li>5. Reach the Old Watchtower before nightfall</li>
+                        </ul>
+                        <p class="text-gray-400 mt-3 italic">Key Decision: The first Hollow you meet can guide you or curse you. Spare it to gain a permanent directional hint. Attack it for early bone charms.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-blood-800 mb-3">Act II: The Deep Wood</h3>
+                        <ul class="text-gray-300 space-y-2 ml-4">
+                            <li>1. Navigate the maze-like undergrowth using landmark clues</li>
+                            <li>2. Discover the Creekside Shrine and offer a bone charm</li>
+                            <li>3. Evade The Watcher in the Old Growth district</li>
+                            <li>4. Find Dr. Marsh's second journal at the Ranger Station</li>
+                            <li>5. Learn about the "Feeding Grounds" ceremony</li>
+                        </ul>
+                        <p class="text-gray-400 mt-3 italic">Key Decision: The Creekside Shrine accepts different offerings. White bone charms reveal safe paths. Red bone charms reveal creature weaknesses.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-blood-800 mb-3">Act III: The Heart of Dread</h3>
+                        <ul class="text-gray-300 space-y-2 ml-4">
+                            <li>1. Locate the three shrine fragments hidden throughout the forest</li>
+                            <li>2. Choose your path: The Path of Light or The Path of Shadow</li>
+                            <li>3. Confront the entity known as "The First Hunger"</li>
+                            <li>4. Make your final choice that determines the ending</li>
+                        </ul>
+                        <p class="text-gray-400 mt-3 italic">Key Decision: This choice affects the entire ending. No decision is purely good or evil—the forest operates on different morality.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Lore: The First Hunger -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Lore: The First Hunger</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Long before human settlers arrived, the forest was home to the Hollow People—spirits who maintained the balance between growth and decay. They tended the woods for millennia, ensuring no single species dominated.</p>
+                    <p>Then came the Arrival—the meteor that struck the heart of the forest. It brought with it the First Hunger, an entity of pure consumption that fed not on flesh but on existence itself. It devoured the Hollow People one by one, corrupting their forms into the twisted creatures that roam today.</p>
+                    <p>The corruption spreads slowly. Each year, more of the forest falls silent. The remaining Hollow are memories of what they once were, forever mourning what was lost.</p>
+                    <p class="text-blood-800 font-semibold">The meteor's crater still exists at the forest's center. It pulses with a faint red light, and those who approach report hearing whispers in languages that predate human speech.</p>
+                </div>
+            </article>
+
+            <!-- Characters -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Key Characters</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Dr. Elena Marsh</h3>
+                        <p class="text-gray-400 text-sm">Team leader and xenoanthropologist. Her journals reveal she knew more about the forest's danger than she let on. Fate: Unknown.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Marcus Webb</h3>
+                        <p class="text-gray-400 text-sm">The expedition's guide. Experienced woodsman who claimed to know every trail. He vanished on the first night. Fate: Captured by Crawlers.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">The Watcher</h3>
+                        <p class="text-gray-400 text-sm">Not truly evil—merely doing what it was created to do. Some say it was the first Hollow, corrupted beyond recognition. Others claim it is the forest itself, given form.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">The Voice in the Dark</h3>
+                        <p class="text-gray-400 text-sm">A mysterious presence that speaks directly to the player. It offers knowledge at a price. Its true nature is unknown, but it predates even the First Hunger.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Endings -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Endings Guide</h2>
+                <div class="space-y-4">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Ending A: The Breaking Dawn</h3>
+                        <p class="text-gray-400 text-sm">Destroy the First Hunger completely. This also destroys the forest and all corrupted creatures. You escape, but the land remains dead. <span class="text-blood-800">"Some prices are worth paying."</span></p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Ending B: The New Balance</h3>
+                        <p class="text-gray-400 text-sm">Restore the Hollow People using the combined shrine power. The forest heals slowly, but you cannot leave. You become the new caretaker. <span class="text-fog">"The forest remembers."</span></p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Ending C: The Eternal Hunt</h3>
+                        <p class="text-gray-400 text-sm">Embrace the First Hunger's power. You become the new entity, hunting through forests across the world. <span class="text-blood-800">"Hunger is the only truth."</span></p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Ending D: The Forgotten</h3>
+                        <p class="text-gray-400 text-sm">The hidden ending. Achieve perfect silence, no creature awareness, all Hollow spared. Become one with the forest as a guardian spirit. <span class="text-purple-400">"You were never here at all."</span></p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 mt-16 border-t border-forest-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                Fan-made wiki for Nature of Dread. Not affiliated with the developers.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                All game content and trademarks belong to their respective owners.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

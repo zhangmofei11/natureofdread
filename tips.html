@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Tips - Nature of Dread Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0d1f0d',
+                            800: '#1a3a1a',
+                            700: '#2d5a2d',
+                        },
+                        blood: {
+                            900: '#4a0000',
+                            800: '#8b0000',
+                            700: '#b30000',
+                        },
+                        fog: '#e8f0e8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d1f0d 50%, #0a0a0a 100%);
+        }
+        .fog-overlay {
+            background: radial-gradient(ellipse at bottom, rgba(232,240,232,0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-200 font-sans">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <div class="fog-overlay fixed inset-0 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-forest-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold text-blood-800 hover:text-blood-700 transition-colors">
+                    Nature of Dread
+                </a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-fog hover:text-blood-800 transition-colors">Home</a>
+                    <a href="creatures.html" class="text-fog hover:text-blood-800 transition-colors">Creatures</a>
+                    <a href="story.html" class="text-fog hover:text-blood-800 transition-colors">Story</a>
+                    <a href="tips.html" class="text-fog hover:text-blood-800 transition-colors border-b-2 border-blood-800">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blood-800">Survival Tips</h1>
+            <p class="text-xl text-fog/70">Essential strategies to survive the Dreadwood</p>
+        </div>
+    </header>
+
+    <!-- Tips Content -->
+    <section class="py-8 px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+            <!-- Sound Management -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 flex items-center">
+                    <span class="text-3xl mr-3">🔇</span> Sound Management
+                </h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Sound is your greatest enemy in the Dreadwood. Every footstep, every breath, every rustle of clothing can attract deadly attention.</p>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Key Techniques</h3>
+                        <ul class="space-y-2">
+                            <li><strong class="text-fog">Sneak Walking (Hold Shift):</strong> Reduces footstep volume by 80% but slows movement significantly</li>
+                            <li><strong class="text-fog">Hold Breath (Hold Space):</strong> Prevents breathing sounds that The Watcher can detect within 30 meters</li>
+                            <li><strong class="text-fog">Crouching:</strong> Further reduces sound footprint and makes you harder to spot visually</li>
+                            <li><strong class="text-fog">Environmental Cover:</strong> Dense foliage, fog areas, and near water features mask sound</li>
+                        </ul>
+                    </div>
+                    <p class="text-sm text-gray-500 italic">Pro Tip: Rain is your friend. Heavy rain completely masks footsteps but reduces visibility.</p>
+                </div>
+            </article>
+
+            <!-- Light Management -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 flex items-center">
+                    <span class="text-3xl mr-3">💡</span> Light Management
+                </h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Finding the balance between visibility and detection is crucial. Light attracts creatures, but complete darkness increases other dangers.</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold text-fog mb-2">Flashlight (F key)</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Reveals hidden items and paths</li>
+                                <li>• Can temporarily stun Crawlers</li>
+                                <li>• Attracts The Watcher if used carelessly</li>
+                                <li>• Use in short bursts to conserve battery</li>
+                            </ul>
+                        </div>
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold text-fog mb-2">Glow Items</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Mushroom clusters provide safe ambient light</li>
+                                <li>• Bone charms glow faintly (safe to use)</li>
+                                <li>• Red mushrooms attract predators</li>
+                                <li>• White mushrooms repel some creatures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Creature Avoidance -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 flex items-center">
+                    <span class="text-3xl mr-3">👁️</span> Creature Avoidance Strategies
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Avoiding The Watcher</h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>• Listen for clicking sounds—means it's hunting nearby</li>
+                            <li>• Stop moving entirely when you hear it approach</li>
+                            <li>• Never run unless directly threatened</li>
+                            <li>• The Watcher cannot detect low-frequency movements</li>
+                            <li>• Red mushroom areas attract it—avoid or use as distraction</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Avoiding The Crawlers</h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>• They follow sounds persistently—create a distraction</li>
+                            <li>• Running draws more of the pack</li>
+                            <li>• Kill the alpha first to disorient the group</li>
+                            <li>• They avoid direct fire—torches are essential</li>
+                            <li>• They cannot climb—elevated positions are safe</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-purple-400 mb-2">Avoiding The Shadow Stalker</h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li>• Never look directly at mirrors or reflective surfaces</li>
+                            <li>• Keep a light source active at all times</li>
+                            <li>• It appears in your peripheral vision first—turn away</li>
+                            <li>• Direct sunlight forces it to retreat</li>
+                            <li>• White bone charms provide sanity protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Resource Management -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 flex items-center">
+                    <span class="text-3xl mr-3">🎒</span> Resource Management
+                </h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Supplies are scarce. Every item counts, and knowing what to prioritize can mean the difference between survival and a grisly end.</p>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-3">Priority Items</h3>
+                        <div class="grid gap-3">
+                            <div class="flex justify-between items-center border-b border-forest-800 pb-2">
+                                <span class="text-fog">Bone Charms</span>
+                                <span class="text-sm text-gray-400">Always keep 2-3 in reserve</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-forest-800 pb-2">
+                                <span class="text-fog">Salt</span>
+                                <span class="text-sm text-gray-400">Essential for The Breathing Tree</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-forest-800 pb-2">
+                                <span class="text-fog">Torch/Fire Source</span>
+                                <span class="text-sm text-gray-400">Repels most creatures</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-forest-800 pb-2">
+                                <span class="text-fog">Journal Pages</span>
+                                <span class="text-sm text-gray-400">Unlock shortcuts and hints</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-fog">Red Mushrooms</span>
+                                <span class="text-sm text-gray-400">Emergency distraction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sanity Management -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 flex items-center">
+                    <span class="text-3xl mr-3">🧠</span> Sanity Management
+                </h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Your sanity degrades when witnessing horrors, spending too long in darkness, or encountering the Shadow Stalker. Low sanity causes visual distortions and slower reactions.</p>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-fog mb-2">Sanity Restoration</h3>
+                        <ul class="space-y-2">
+                            <li>• White bone charms restore 25% sanity</li>
+                            <li>• Staying in moderate light stabilizes sanity decay</li>
+                            <li>• Finding journal pages provides mental relief</li>
+                            <li>• Safe rests at shrines (when protected) restore sanity</li>
+                            <li>• Avoid looking at the Shadow Stalker directly</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blood-900/30 p-4 rounded-lg border border-blood-800">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Warning Signs of Low Sanity</h3>
+                        <p class="text-sm">Screen edge darkening, hearing whispers, seeing creatures that aren't there, movement controls becoming unresponsive. When sanity reaches 0%, you become vulnerable to possession.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Quick Reference -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4">Quick Reference Chart</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-forest-800">
+                                <th class="text-left py-2 text-fog">Creature</th>
+                                <th class="text-left py-2 text-fog">Best Defense</th>
+                                <th class="text-left py-2 text-fog">Attraction</th>
+                                <th class="text-left py-2 text-fog">Repellent</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">The Watcher</td>
+                                <td>Silence, slow movement</td>
+                                <td>Sound, light</td>
+                                <td>Low frequency</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">The Crawlers</td>
+                                <td>Fire, elevation</td>
+                                <td>Running, squeals</td>
+                                <td>Torches</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">The Breathing Tree</td>
+                                <td>Salt, staying airborne</td>
+                                <td>Proximity, sound</td>
+                                <td>Fire, salt</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">Shadow Stalker</td>
+                                <td>Constant light</td>
+                                <td>Darkness, mirrors</td>
+                                <td>Sunlight</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">The Hollow</td>
+                                <td>Iron, fire</td>
+                                <td>Aggression</td>
+                                <td>Respect, song</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 mt-16 border-t border-forest-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                Fan-made wiki for Nature of Dread. Not affiliated with the developers.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                All game content and trademarks belong to their respective owners.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
