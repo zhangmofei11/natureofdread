@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkthrough - Nature of Dread Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0d1f0d',
+                            800: '#1a3a1a',
+                            700: '#2d5a2d',
+                        },
+                        blood: {
+                            900: '#4a0000',
+                            800: '#8b0000',
+                            700: '#b30000',
+                        },
+                        fog: '#e8f0e8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d1f0d 50%, #0a0a0a 100%);
+        }
+        .fog-overlay {
+            background: radial-gradient(ellipse at bottom, rgba(232,240,232,0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-200 font-sans">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4STJV9NFM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V4STJV9NFM');
+    </script>
+    <meta name="description" content="Full Nature of Dread walkthrough for beginners and veterans: stage-by-stage objectives, shrine choices, safe routing and the ending paths through the Dreadwood.">
+    <meta name="keywords" content="Nature of Dread walkthrough, beginner guide, game progression, shrine fragments, expedition map, endings, death and respawn, Dreadwood Forest guide">
+    <link rel="canonical" href="https://natureofdread.site/walkthrough.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "WebSite", "@id": "https://natureofdread.site/#website", "name": "Nature of Dread", "url": "https://natureofdread.site/", "inLanguage": "en" },
+        { "@type": "WebPage", "@id": "https://natureofdread.site/#webpage", "url": "https://natureofdread.site/walkthrough.html", "name": "Walkthrough - Nature of Dread Wiki", "description": "Full Nature of Dread walkthrough for beginners and veterans: stage-by-stage objectives, shrine choices, safe routing and the ending paths through the Dreadwood.", "isPartOf": { "@id": "https://natureofdread.site/#website" }, "breadcrumb": { "@id": "https://natureofdread.site/#breadcrumb" }, "inLanguage": "en" },
+        { "@type": "BreadcrumbList", "@id": "https://natureofdread.site/#breadcrumb", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://natureofdread.site/" } ] }
+      ]
+    }
+    </script>
+
+    <div class="fog-overlay fixed inset-0 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-forest-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold text-blood-800 hover:text-blood-700 transition-colors">
+                    Nature of Dread
+                </a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-fog hover:text-blood-800 transition-colors">Home</a>
+                    <a href="creatures.html" class="text-fog hover:text-blood-800 transition-colors">Creatures</a>
+                    <a href="story.html" class="text-fog hover:text-blood-800 transition-colors">Story</a>
+                    <a href="tips.html" class="text-fog hover:text-blood-800 transition-colors">Tips</a>
+                    <a href="pro-tips.html" class="text-fog hover:text-blood-800 transition-colors">Pro Tips</a>
+                    <a href="walkthrough.html" class="text-fog hover:text-blood-800 transition-colors border-b-2 border-blood-800">Walkthrough</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blood-800">Nature of Dread Walkthrough</h1>
+            <p class="text-xl text-fog/70">From the first clearing to the crater at the heart of the forest</p>
+        </div>
+    </header>
+
+    <!-- Walkthrough Content -->
+    <section class="py-8 px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+            <!-- Stage 0 -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Stage 0: The First Hour</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>You wake in a moonlit clearing with no camp and no companions. Your first job is not exploration — it is calibration. Learn how far sneak walking carries, how long you can hold your breath, and how bright the flashlight is before something notices you.</p>
+                    <ul class="space-y-2">
+                        <li>Sweep the clearing for the first journal entry, a torch and any loose bone charms before you leave it.</li>
+                        <li>Walk to the eastern treeline, then turn back. Establish a landmark you can find in the dark.</li>
+                        <li>Do not sprint once, not even on open ground. Learn where The Watcher is before it learns about you.</li>
+                        <li>Keep the moon in view. Direct moonlight is your safest travel condition and the Shadow Stalker cannot hold form in it.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 italic">Beginner Note: The forest regenerates between runs, so your first-hour route will differ next time. Learn the landmarks, not the exact path.</p>
+                </div>
+            </article>
+
+            <!-- Act I -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Act I: Awakening</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Act I is the expedition's trail. It is short, forgiving, and teaches every mechanic you will need later.</p>
+                    <ol class="space-y-2 ml-4">
+                        <li>Search the initial clearing for supplies and the first journal entry.</li>
+                        <li>Follow the broken branches east to the abandoned camp and take the expedition map from the supply tent.</li>
+                        <li>Meet your first Hollow. Spare it — a spared Hollow gives you a permanent directional hint that makes the rest of Act I trivial. Killing it is a valid choice if you need the bone charms instead.</li>
+                        <li>Reach the Old Watchtower before nightfall. The tower is the first safe room in the game and your first genuine sanity restore.</li>
+                    </ol>
+                    <p>The Watchtower is also where you learn the hold pattern: barricade the ground floor, keep one torch burning, and let the night pass. Crawlers will not climb to you.</p>
+                </div>
+            </article>
+
+            <!-- Act II -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Act II: The Deep Wood</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Act II is the maze. The map only marks districts, not routes, so you navigate by landmark, and the forest reacts to your noise the whole time.</p>
+                    <ol class="space-y-2 ml-4">
+                        <li>Work the undergrowth district in a loop rather than in straight lines. Long straight runs carry your noise straight into The Watcher's patrol.</li>
+                        <li>Find the Creekside Shrine and make an offering. A white bone charm reveals a safe path; a red charm reveals creature weaknesses.</li>
+                        <li>Cross the Old Growth district during a rain window or in heavy fog, and never near red mushroom patches.</li>
+                        <li>Retrieve Dr. Marsh's second journal at the Ranger Station — it unlocks the Feeding Grounds ceremony and reveals a Breathing Tree weakness.</li>
+                        <li>Use the Ranger Station as your forward base. It is closer to the center than the Watchtower and saves a full night of travel.</li>
+                    </ol>
+                    <p class="text-sm text-gray-500 italic">Progression Note: Every shrine fragment you find in Act II shortens Act III. Collecting two of three lets you skip the final hollow gauntlet entirely, which is where most veteran runs end.</p>
+                </div>
+            </article>
+
+            <!-- Act III -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Act III: The Heart of Dread</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Act III is the crater, and it is deliberately hostile. Breathing Trees line the approach, The Watcher patrols tighter loops, and the Shadow Stalker appears wherever light fails.</p>
+                    <ol class="space-y-2 ml-4">
+                        <li>Collect the remaining shrine fragments and the final journals.</li>
+                        <li>Choose your route: The Path of Light or The Path of Shadow. Light is safer but slower and costs more sanity; Shadow is faster and costs resources.</li>
+                        <li>Cross the crater rim. Salt every Breathing Tree you must pass — the gas cycle runs roughly three to four minutes, so time your run between exhales.</li>
+                        <li>Confront The First Hunger. You cannot outrun it and it does not negotiate; only your earlier choices decide how the fight goes.</li>
+                        <li>Make the final choice that determines your ending.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Checklist Table -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Objective Checklist</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-forest-800">
+                                <th class="text-left py-2 text-fog">Goal</th>
+                                <th class="text-left py-2 text-fog">Where</th>
+                                <th class="text-left py-2 text-fog">Why It Matters</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">Expedition map</td>
+                                <td>Supply tent, east clearing</td>
+                                <td>Marks districts and safe rooms</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">Dr. Marsh journals</td>
+                                <td>First camp, Ranger Station</td>
+                                <td>Reveal shrine and creature rules</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">Shrine fragments</td>
+                                <td>Three hidden sites</td>
+                                <td>Skip parts of the final act</td>
+                            </tr>
+                            <tr class="border-b border-forest-800/50">
+                                <td class="py-2">Bone charms</td>
+                                <td>Hollows, caches</td>
+                                <td>Sanity, shrine offerings</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Salt and torch fuel</td>
+                                <td>Creek beds, supply caches</td>
+                                <td>Survive the Breathing Tree gauntlet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Death and Endings -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Death, Sanity Zero and Endings</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Death in the Dreadwood is a failure state with a history attached. When a creature catches you, the run ends and the forest notes what took you. When sanity hits zero instead, you are not killed — you are vulnerable to possession, which is a slower and more dangerous loss.</p>
+                    <p>Because the forest is procedural, the layout changes on the next attempt, but collected knowledge does not. Journal pages, shrine fragment locations, safe room positions and creature patterns carry over as player knowledge even when the world does not. Every death should buy you a better route.</p>
+                    <p>Endings follow your decisions, not your survival time. Sparing Hollows and refusing to hunt them pushes you toward Ending B, the New Balance. Destroying the First Hunger at the crater gives Ending A, the Breaking Dawn. Taking its power gives Ending C, the Eternal Hunt. Ending D, the Forgotten, requires a perfect silent run: every Hollow spared, no creature ever aware of you, no shrine power taken for yourself. That run needs near-total stealth discipline, which is where the advanced play starts.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/8bf056fff8a4efb545ab8f1e720db58e"></script>
+    <div id="container-8bf056fff8a4efb545ab8f1e720db58e"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/7a1f962bd405b1f7f7576243c3e5d7e8"></script>
+
+    <script>
+      atOptions = {
+        'key' : '83c6920afc46a325ba8b0769007cbf5a',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/83c6920afc46a325ba8b0769007cbf5a"></script>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 mt-16 border-t border-forest-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                Fan-made wiki for Nature of Dread. Not affiliated with the developers.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                All game content and trademarks belong to their respective owners.
+            </p>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-4xl mx-auto py-8 px-4 border-t border-amber-900">
+        <h3 class="text-xl font-bold mb-4 text-white">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="creatures.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Creatures - Nature of Dread Wiki</span>
+        </a>
+        <a href="story.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Story & Lore - Nature of Dread Wiki</span>
+        </a>
+        <a href="tips.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Survival Tips - Nature of Dread Wiki</span>
+        </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Tips - Nature of Dread Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0d1f0d',
+                            800: '#1a3a1a',
+                            700: '#2d5a2d',
+                        },
+                        blood: {
+                            900: '#4a0000',
+                            800: '#8b0000',
+                            700: '#b30000',
+                        },
+                        fog: '#e8f0e8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d1f0d 50%, #0a0a0a 100%);
+        }
+        .fog-overlay {
+            background: radial-gradient(ellipse at bottom, rgba(232,240,232,0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-200 font-sans">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4STJV9NFM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V4STJV9NFM');
+    </script>
+    <meta name="description" content="Master Nature of Dread with advanced pro tips: per-creature counter tactics, resource budgeting, safe-room routing, noise discipline and fatal mistake recovery.">
+    <meta name="keywords" content="Nature of Dread pro tips, advanced survival tactics, creature counter tactics, resource budgeting, safe room routing, difficulty escalation, game mistakes">
+    <link rel="canonical" href="https://natureofdread.site/pro-tips.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "WebSite", "@id": "https://natureofdread.site/#website", "name": "Nature of Dread", "url": "https://natureofdread.site/", "inLanguage": "en" },
+        { "@type": "WebPage", "@id": "https://natureofdread.site/#webpage", "url": "https://natureofdread.site/pro-tips.html", "name": "Pro Tips - Nature of Dread Wiki", "description": "Master Nature of Dread with advanced pro tips: per-creature counter tactics, resource budgeting, safe-room routing, noise discipline and fatal mistake recovery.", "isPartOf": { "@id": "https://natureofdread.site/#website" }, "breadcrumb": { "@id": "https://natureofdread.site/#breadcrumb" }, "inLanguage": "en" },
+        { "@type": "BreadcrumbList", "@id": "https://natureofdread.site/#breadcrumb", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://natureofdread.site/" } ] }
+      ]
+    }
+    </script>
+
+    <div class="fog-overlay fixed inset-0 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-forest-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold text-blood-800 hover:text-blood-700 transition-colors">
+                    Nature of Dread
+                </a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-fog hover:text-blood-800 transition-colors">Home</a>
+                    <a href="creatures.html" class="text-fog hover:text-blood-800 transition-colors">Creatures</a>
+                    <a href="story.html" class="text-fog hover:text-blood-800 transition-colors">Story</a>
+                    <a href="tips.html" class="text-fog hover:text-blood-800 transition-colors">Tips</a>
+                    <a href="pro-tips.html" class="text-fog hover:text-blood-800 transition-colors border-b-2 border-blood-800">Pro Tips</a>
+                    <a href="walkthrough.html" class="text-fog hover:text-blood-800 transition-colors">Walkthrough</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blood-800">Nature of Dread Pro Tips</h1>
+            <p class="text-xl text-fog/70">Advanced tricks for players who already know the basics</p>
+        </div>
+    </header>
+
+    <!-- Pro Tips Content -->
+    <section class="py-8 px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+
+            <!-- Resource Budgeting -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Resource Budgeting</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Surviving the Dreadwood is less about finding more supplies than spending the right ones at the right time. Every pickup you carry is a liability if it slows you down or forces a noisy fight. Plan a budget per night rather than hoarding.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-forest-800">
+                                    <th class="text-left py-2 text-fog">Resource</th>
+                                    <th class="text-left py-2 text-fog">Safe Carry</th>
+                                    <th class="text-left py-2 text-fog">Spend It On</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">White bone charms</td>
+                                    <td>2 in reserve</td>
+                                    <td>Sanity rescue, The Hollow offerings</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">Salt</td>
+                                    <td>3 pouches</td>
+                                    <td>Breathing Tree roots</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">Torch fuel</td>
+                                    <td>2 lit at a time</td>
+                                    <td>Crawler packs, hollow corridors</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">Red mushrooms</td>
+                                    <td>1 per run</td>
+                                    <td>Drawing The Watcher away</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2">Journal pages</td>
+                                    <td>All of them</td>
+                                    <td>Never trade these away</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm text-gray-500 italic">Pro Tip: Stamina is the resource you cannot restock. Sprinting out of a Crawler nest is how good runs end. Save stamina for the final twenty metres, not the first.</p>
+                </div>
+            </article>
+
+            <!-- Creature Counter Tactics -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Creature Counter-Tactics</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>The base survival tips cover what each creature is. This is how you actually beat the encounter without a fight.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-forest-800">
+                                    <th class="text-left py-2 text-fog">Creature</th>
+                                    <th class="text-left py-2 text-fog">Avoidance Routine</th>
+                                    <th class="text-left py-2 text-fog">Error That Kills You</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">The Watcher</td>
+                                    <td>Freeze on the click, back away on the flat, never cross a red mushroom patch</td>
+                                    <td>Running while it is already tracking</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">The Crawlers</td>
+                                    <td>Kill the red-marked alpha first, then climb above them</td>
+                                    <td>Sprinting through the tunnel mouth</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">Breathing Tree</td>
+                                    <td>Salt the roots, then leave before the gas cycle resets</td>
+                                    <td>Standing beneath it when it exhales</td>
+                                </tr>
+                                <tr class="border-b border-forest-800/50">
+                                    <td class="py-2">Shadow Stalker</td>
+                                    <td>Hold light, never face reflective water or glass</td>
+                                    <td>Glancing into a still pool</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2">The Hollow</td>
+                                    <td>Mimic the mournful song, offer a charm, walk away</td>
+                                    <td>Attacking a second one you have already spared</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>The Watcher is deaf to very low frequencies, so crouch-walking past one is a legitimate strategy, not a cheat. Crawlers tire quickly but recover fast, so a failed escape is not a death sentence — a broken leg of an escape route is.</p>
+                </div>
+            </article>
+
+            <!-- Noise Discipline -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Noise Discipline and Safe-Room Routing</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Think of sound as a budget too. Every action spends it, and The Watcher investigates the loudest recent noise. Sneak walking cuts footstep volume sharply, crouching reduces your visual silhouette, and holding your breath silences the one noise you cannot control.</p>
+                    <ul class="space-y-2">
+                        <li><strong class="text-fog">Safe rooms:</strong> the Old Watchtower, the Ranger Station and the Creekside Shrine are defensible holds. Bank sanity there, not in the open.</li>
+                        <li><strong class="text-fog">Route planning:</strong> pick two exits per safe room and reach the second one before dark.</li>
+                        <li><strong class="text-fog">Fog lines:</strong> dense fog masks sound but costs visibility. Cross fog only when you already know where you are going.</li>
+                        <li><strong class="text-fog">Rain windows:</strong> heavy rain masks footsteps entirely — the best time to relocate between districts.</li>
+                        <li><strong class="text-fog">Deliberate noise:</strong> throw a red mushroom into a far corridor so The Watcher commits to the wrong direction.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 italic">Pro Tip: Never hold your breath while moving. It buys silence but costs stamina and clarity, and a panicked exhalation in the dark undoes the entire trick.</p>
+                </div>
+            </article>
+
+            <!-- Sanity Floor -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Sanity Floor and Difficulty Escalation</h2>
+                <div class="text-gray-300 space-y-4">
+                    <p>Sanity is a clock, not a bar. It drains faster as nights stack up, and once it hits zero you are vulnerable to possession. Treat 40% sanity as your real emergency threshold, not 10%.</p>
+                    <ul class="space-y-2">
+                        <li><strong class="text-fog">Early nights:</strong> one roaming hunter at a time. Learn sound discipline here, while mistakes are cheap.</li>
+                        <li><strong class="text-fog">Middle nights:</strong> two hunters overlap and the Shadow Stalker appears in darker districts. Keep a light on the move.</li>
+                        <li><strong class="text-fog">Late nights:</strong> Crawler packs grow to their maximum size and Breathing Trees line the routes to the shrines. Salt becomes the priority pickup, not charms.</li>
+                        <li><strong class="text-fog">Lunar phases:</strong> The Watcher hunts hardest on new moons, the Shadow Stalker only appears on specific phases, and direct sunlight is your single strongest weapon against it.</li>
+                    </ul>
+                    <p>Restore sanity before darkness, not during it. A white bone charm used at a shrine while the Watcher is still moving is a charm wasted.</p>
+                </div>
+            </article>
+
+            <!-- Common Mistakes -->
+            <article class="bg-forest-900/60 rounded-lg border border-forest-800 p-6">
+                <h2 class="text-2xl font-bold text-fog mb-4 border-b border-forest-800 pb-2">Common Mistakes and How to Recover</h2>
+                <div class="space-y-4 text-gray-300">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Panic sprinting</h3>
+                        <p class="text-sm">You heard something, you sprinted, and now every creature in the district knows your position. Recovery: stop completely, crouch, hold breath for ten seconds, then move at sneak pace in the opposite direction of your last noise.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Torch burning empty</h3>
+                        <p class="text-sm">You lit a torch to escape Crawlers and now have nothing left when the Hollow blocks the corridor. Recovery: hand on a bone charm until the hollow passes, then relocate to a mushroom cluster for light.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Sanity spiral</h3>
+                        <p class="text-sm">You saw the Shadow Stalker, your screen is warping, and your inputs feel sluggish. Recovery: leave the area entirely, walk in daylight if the moon is up, and spend a charm. Sanity recovered in a safe room resets the spiral completely.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-blood-800 mb-2">Over-hunting</h3>
+                        <p class="text-sm">You fought a Hollow for bone charms and woke a Crawler pack with the noise. Recovery: Hollows are not worth fighting when you have two charms spare. Spare them — they guide you, and that guidance is worth more than loot.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/8bf056fff8a4efb545ab8f1e720db58e"></script>
+    <div id="container-8bf056fff8a4efb545ab8f1e720db58e"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/7a1f962bd405b1f7f7576243c3e5d7e8"></script>
+
+    <script>
+      atOptions = {
+        'key' : '83c6920afc46a325ba8b0769007cbf5a',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/83c6920afc46a325ba8b0769007cbf5a"></script>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 mt-16 border-t border-forest-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                Fan-made wiki for Nature of Dread. Not affiliated with the developers.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                All game content and trademarks belong to their respective owners.
+            </p>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-4xl mx-auto py-8 px-4 border-t border-amber-900">
+        <h3 class="text-xl font-bold mb-4 text-white">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="creatures.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Creatures - Nature of Dread Wiki</span>
+        </a>
+        <a href="tips.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Survival Tips - Nature of Dread Wiki</span>
+        </a>
+        <a href="walkthrough.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Walkthrough - Nature of Dread Wiki</span>
+        </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
